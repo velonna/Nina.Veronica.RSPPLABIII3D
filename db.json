@@ -1,0 +1,84 @@
+{
+  "anuncio_auto": [
+    {
+      "id": 1,
+      "titulo": "Alquiler de uno",
+      "transaccion": "Alquiler",
+      "descripcion": "Alquilo un auto encontrado ayer",
+      "precio": "964",
+      "puertas": "5",
+      "kms": "500",
+      "potencia": "200"
+    },
+    {
+      "id": 2,
+      "titulo": "Venta de otro",
+      "transaccion": "Venta",
+      "descripcion": "Venta de ultimo modelo",
+      "precio": "964",
+      "puertas": "8",
+      "kms": "0",
+      "potencia": "4230"
+    },
+    {
+      "titulo": "Alquilo de auto usado",
+      "transaccion": "Alquiler",
+      "descripcion": "Alquler de un auto",
+      "precio": "264",
+      "puertas": "9",
+      "kms": "4500",
+      "potencia": "250",
+      "id": 3
+    },
+    {
+      "titulo": "vendo bicicleta aurora",
+      "transaccion": "Venta",
+      "descripcion": "aurora rodado 20",
+      "precio": "45",
+      "puertas": "2",
+      "kms": "6",
+      "potencia": "55",
+      "id": 4
+    },
+    {
+      "titulo": "Venta de otro auto encontrado va",
+      "transaccion": "Venta",
+      "descripcion": "Venta de ultimo modelo",
+      "precio": "840",
+      "puertas": "8",
+      "kms": "5",
+      "potencia": "730",
+      "id": 6
+    },
+    {
+      "titulo": "No Venta de otro, es modificacion",
+      "transaccion": "Alquiler",
+      "descripcion": "No Venta de ultimo modelo",
+      "precio": "964",
+      "puertas": "9",
+      "kms": "5",
+      "potencia": "4235",
+      "id": 7
+    },
+    {
+      "titulo": "carting",
+      "transaccion": "Alquiler",
+      "descripcion": "cochecito",
+      "precio": "45",
+      "puertas": "4",
+      "kms": "45",
+      "potencia": "45",
+      "id": 8
+    },
+    {
+      "titulo": "bicicleta",
+      "transaccion": "Venta",
+      "descripcion": "de bambu",
+      "precio": "34",
+      "puertas": "2",
+      "kms": "4",
+      "potencia": "455",
+      "id": 9
+    }
+  ]
+}

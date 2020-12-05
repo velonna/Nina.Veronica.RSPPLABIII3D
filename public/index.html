@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="./js/index.js" type="module"></script> 
+    <link rel="stylesheet" href="./css/styles.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title id="title">Pisteando</title>   <!--    -->
+
+</head>
+
+<body>
+    <header> 
+        <div class="container">
+            <div class="barra row">
+              <div class="divNav col col-6 ">
+                
+              </div>
+              <div class="col col-6">
+                <div>                                  
+                
+                    <nav id="navegacion" class="navegacion">
+                        <a href="#" class="enlace" id="link_nosotros">Nosotros</a>
+                        <a href="#" class="enlace" id="link_anuncios">Anuncios</a>
+                        <a href="#" class="enlace" id="link_blog">Blog</a>
+                        <a href="#" class="enlace" id="link_contacto">Contacto</a>
+                    </nav>               
+    
+                </div>
+              </div>
+            </div>             
+        
+            
+            <h1>Administracion</h1>
+            <div class = "divclass row">   
+                 <!-- img de barra-->   
+            <div>        
+        </div>       
+       
+    </header>
+    <div class="container">    
+       <!--  <div id= "divh1" class="divh1class"> 
+            <span id="spinner" class="spinner">   
+                </div>  -->
+        <div class="card text-center">
+            <div class="card-body">
+                <fieldset> 
+                    <h6 class="card-subtitle mb-2 text-muted">Informacion del Anuncio</h6>     
+                    <form id="form">
+                        <div class="mb-2 bg-white text-dark">
+                            <div class="form-group">
+                                <label for="txtTitulo">Título:</label>
+                                <input class ="form-control" type="text" id="txtTitulo" placeholder="Ingrese Titulo..." name="titulo" required="required">
+                               
+                                <input type="hidden" id="id" name ="id" value="">
+                            </div>
+                            <label for="checkT">Transaccion:</label>
+                            <div id = "checkT" class="centrar-texto"> 
+                                <div class="form-check form-check-inline col-md-4">
+                                    <input class="form-check-input" type="radio" name="transaccion" id="rdoV" value="Venta" checked>
+                                    <label class="form-check-label" for="rdoV"> Venta</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="transaccion" id="rdoA" value="Alquiler">
+                                    <label class="form-check-label" for="rdoA">Alquiler</label>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                    <label for="txtDescripcion">Descripcion:</label>                         
+                                    <input class ="form-control" type="text" id="txtDescripcion" placeholder="Descripcion..." name = "descripcion" required="required">
+                                   
+                            </div>
+                            <div class="form-group">
+                                <label for="txtPrecio">Precio:</label>
+                                <i class="fas fa-money-bill-wave"></i><input class ="form-control" type="text" id="txtPrecio" placeholder="Precio..." name = "precio" required >
+                               
+                            </div>
+                            <div class="form_box">   
+                                <label for="txtPuerta">Puertas:</label>                        
+                                <i class="fas fa-door-open"></i>  <input class ="form-control" type="number" min="2" max="10" id="txtPuerta" placeholder="Puerta..." name="puertas" value = "4">
+                                
+                                <label for="txtKm">Kms:</label>
+                                <i class="fas fa-tachometer-alt"></i>  <input class ="form-control" type="number" min = "0" id="txtKm" placeholder="Km..." name="kms" value="0" >
+                             
+                                <label for="txtPotencia">Potencia:</label>
+                                <i class="fas fa-car-battery"></i>  <input class ="form-control" type="text" id="txtPotencia" placeholder="Potencia..." name="potencia" required> 
+                               
+                            
+                            </div>
+                          
+                        </div>
+                        <div class="centrar-texto row">
+                            <div class="col col-3">
+                                <button id="agregar" name ="agregar" class="btn btn-outline-dark">
+                                    <i class="far fa-save "></i>
+                                    Guardar
+                                </button>                                                    
+                        
+                            </div>
+                        
+                            <div class="col col-3">
+                                <button id="cancelar" class="btn btn-outline-dark" name="cancelar">
+                                    <i class="fa fa-trash " aria-hidden="true"></i>
+                                    Cancelar
+                                </button>
+                
+                            </div>
+                            <div class="col col-3">
+                                <button id="modificar" class="btn btn-outline-dark" name="modificar">
+                                    <i class="far fa-save "></i>
+                                    Modificar
+                                </button>                                                    
+                        
+                            </div>
+                            <div class="col col-3">
+                                <button id="eliminar"class="btn btn-outline-dark" name="eliminar" >
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    Eliminar
+                                </button>                                                  
+                        
+                            </div>
+                        
+                        </div>
+                    </form>
+                    <div class="centrar-texto row">
+                       
+                    
+                    </div>
+
+                </fieldset>
+                <div class="pad-contenido">
+                    <div class="card">  
+
+                        <div id="divFiltros" class="row justify-content-md-center card-body">
+                            
+                        </div>
+                        
+                    </div>
+
+                     
+                    <div id="divTabla" class="table-responsive-md pad-contenido">
+
+                    </div>
+                </div>
+            </div >
+        </div> 
+    </div>
+
+    <footer class="container pad-contenido">
+        <div class="barra row">
+            <div class="pieLeft col col-6">
+                <nav class="navPie">
+
+                    <a href="#" class="enlace" id="link_nosotros">Nosotros</a>
+
+                    <a href="#" class="enlace" id="link_anuncios">Anuncios</a>
+
+                    <a href="#" class="enlace" id="link_blog">Blog</a>
+
+                    <a href="#" class="enlace" id="link_contacto">Contacto</a>
+
+                </nav>
+            
+            </div>
+            <div class="pieRigth col col-6">
+                <span>Todos los Derechos Reservados 2019 &copy; </span>
+
+            </div>
+    </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
