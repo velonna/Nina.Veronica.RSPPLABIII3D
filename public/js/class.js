@@ -78,6 +78,9 @@ function filtrarLista(lista){
       for (const key in row) {
           if(document.getElementById("check" + key).checked){
               fila[key] = row[key];
+              //por cada una guardo
+              guardarenLST(fila[key]);
+              console.log(fila[key]);
           }else if(key == "id"){
               fila['noid'] = row[key];
               console.log(fila['noid']);
@@ -132,5 +135,8 @@ function filtroCalcular(lista){
 
   return lista;
 }
+function guardarenLST(datos){
+    localStorage.setItem("datosChek", JSON.stringify(datos));
+};
 
 export {Vista};
